@@ -1,0 +1,19 @@
+<h2>My Heroes</h2>
+<!-- 1.-para mostrar los arrays de hero.ts -->
+<!-- 1.-<h2>{{hero.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div><span>name: </span>{{hero.name}}</div> -->
+<!-- para editar el heroe que quiere que se muestre -->
+<!-- <div>
+  <label>name:
+    <input [(ngModel)]="hero.name" placeholder="name"/>
+  </label>
+</div> -->
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+  </li>
+</ul>
