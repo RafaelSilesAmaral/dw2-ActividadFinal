@@ -1,9 +1,11 @@
+<!-- 3.-se crea este atributo para especificar las caracterisca de los heroes -->
 <div *ngIf="hero">
-  <h2>{{hero.name | uppercase}} Details</h2>
+  <h2> Detalles de {{hero.name | uppercase}}</h2>
   <div><span>id: </span>{{hero.id}}</div>
+  <div><span>Fecha de estreno: </span>{{hero.date}}</div>
   <div>
-    <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+    <label for="hero-name">Nombre de la pelicula: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" />
   </div>
-  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="goBack()">Regresar Atras</button>
 </div>

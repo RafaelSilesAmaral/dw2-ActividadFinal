@@ -1,4 +1,4 @@
-<h2>My Heroes</h2>
+<h2>Lista de Peliculas Found Footage</h2>
 <!-- 1.-para mostrar los arrays de hero.ts -->
 <!-- 1.-<h2>{{hero.name | uppercase}} Details</h2>
 <div><span>id: </span>{{hero.id}}</div>
@@ -10,10 +10,25 @@
   </label>
 </div> -->
 
+<!-- 2.-muestra la lista de heroes y lo enumera.*ngFor es un bucle de angular -->
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
+    <!-- [class.selected]="hero === selectedHero" -->
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
   </li>
 </ul>
+
+<!-- 2.-para seleccionar un heroes  -->
+<!-- 3.-se corta esta parte y se lo pega en el atributo creado
+  <div *ngIf="selectedHero">
+  <h2>{{selectedHero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedHero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div> -->

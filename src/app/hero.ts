@@ -1,6 +1,6 @@
-//se creo este interfaz para dar forma de como queremos se muestre la lista de heroes
-//como va hacer el arrays
+//1.-se creo este interfaz para dar forma a la estructura del arrays
 export interface Hero {
-    id: number;
-    name: string;
-  }
+  id: number;
+  name: string;
+  date: string;
+}

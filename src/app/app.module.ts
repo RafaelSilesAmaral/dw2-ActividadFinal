@@ -12,7 +12,7 @@ import { MessagesComponent } from './messages/messages.component';
 
 import { AppRoutingModule } from './app-routing.module';
 //1.-todos los componenetes se deden declarar en @NgModule
-//1.-se declara el heroComponet para se utliza los datos que se metio en dicho archivo
+//1.-se declara el heroComponet para utilizar los datos que se metio en dicho archivo
 @NgModule({
   imports: [
     BrowserModule,
